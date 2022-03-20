@@ -1,0 +1,29 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.recipe {
+  margin: 0 auto;
+  padding: 52px 234px 24px;
+}
+
+.recipe__title {
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-size: 48px;
+}
+
+.recipe__details {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 48px;
+}
+
+.recipe__details__times {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+.recipe__details__main {
+  flex-grow: 1;
+}
