@@ -45,39 +45,26 @@
 .recipe__details__yields {
   display: flex;
   align-items: center;
-}
-
-.recipe__details__yields > span {
-  margin-right: 14px;
   color: #f2994a;
 }
 
-.recipe__details__yields__name {
+.recipe__details__yields > span,
+.recipe__details__cook__time > span {
+  margin-right: 14px;
+}
+
+.recipe__details__yields__name,
+.recipe__details__cook__time__name {
   font-size: 10px;
   font-weight: bold;
   text-transform: uppercase;
   color: #bdbdbd;
-}
-
-.recipe__details__yields__number {
-  color: #f2994a;
 }
 
 .recipe__details__cook__time {
   margin-top: 43px;
   display: flex;
   align-items: center;
-}
-
-.recipe__details__cook__time > span {
-  margin-right: 14px;
-}
-
-.recipe__details__cook__time__name {
-  font-size: 10px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #bdbdbd;
 }
 
 .recipe__details__main {
@@ -100,7 +87,8 @@
 .recipe__details__ingrediats__role {
   font-size: 16px;
 }
-.recipe__details__ingrediats__role > input {
+.recipe__details__ingrediats__role > input,
+.recipe__details__ingrediats__suggetions > input {
   margin-right: 9px;
 }
 .recipe__details__ingrediats__role:not(:last-child) {
@@ -109,10 +97,6 @@
 
 .recipe__details__ingrediats__role__bold {
   font-weight: bold;
-}
-
-.recipe__details__ingrediats__suggetions > input {
-  margin-right: 9px;
 }
 
 .recipe__details__ingrediats__suggetions__italic {
@@ -155,7 +139,8 @@ footer {
     font-size: 10px;
     margin-bottom: 20px;
   }
-  .recipe__details__yields__name {
+  .recipe__details__yields__name,
+  .recipe__details__cook__time__name {
     font-size: 8px;
   }
   .recipe__details__cook__times {
@@ -166,9 +151,6 @@ footer {
   }
   .recipe__details__cook__time {
     margin-top: 0;
-  }
-  .recipe__details__cook__time__name {
-    font-size: 8px;
   }
   footer {
     margin-top: 129px;
