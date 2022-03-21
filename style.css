@@ -34,10 +34,22 @@
 }
 
 .recipe__details__times {
-  padding: 52px 10% 50px;
+  padding: 52px 5% 50px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   margin-left: 100px;
   border-radius: 12px;
+  min-width: 216px;
+  max-height: 365px;
+}
+
+.recipe__details__yields {
+  display: flex;
+  align-items: center;
+}
+
+.recipe__details__yields > span {
+  margin-right: 14px;
+  color: #f2994a;
 }
 
 .recipe__details__yields__name {
@@ -49,6 +61,16 @@
 
 .recipe__details__yields__number {
   color: #f2994a;
+}
+
+.recipe__details__cook__time {
+  margin-top: 43px;
+  display: flex;
+  align-items: center;
+}
+
+.recipe__details__cook__time > span {
+  margin-right: 14px;
 }
 
 .recipe__details__cook__time__name {
@@ -127,6 +149,7 @@ footer {
     box-shadow: none;
     border-radius: 0;
     margin-right: 80px;
+    margin-left: 0;
   }
   .recipe__details__yields {
     font-size: 10px;
@@ -140,6 +163,9 @@ footer {
     justify-content: space-between;
     font-size: 10px;
     margin-bottom: 34px;
+  }
+  .recipe__details__cook__time {
+    margin-top: 0;
   }
   .recipe__details__cook__time__name {
     font-size: 8px;
