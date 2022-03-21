@@ -1,5 +1,6 @@
 * {
   font-family: "Montserrat", sans-serif;
+  font-size: 14px;
 }
 
 .recipe {
@@ -13,6 +14,19 @@
   font-size: 48px;
 }
 
+.recipe__explanation {
+  display: flex;
+  font-style: italic;
+  margin: 12px 0 17px;
+  align-items: flex-start;
+}
+
+.recipe__explanation__icon {
+  content: url(./images/6dots.svg);
+  margin-top: 15px;
+  margin-right: 12px;
+}
+
 .recipe__details {
   display: flex;
   flex-direction: row-reverse;
@@ -20,10 +34,117 @@
 }
 
 .recipe__details__times {
+  padding: 52px 10% 50px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  margin-left: 100px;
   border-radius: 12px;
+}
+
+.recipe__details__yields__name {
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #bdbdbd;
+}
+
+.recipe__details__yields__number {
+  color: #f2994a;
+}
+
+.recipe__details__cook__time__name {
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #bdbdbd;
 }
 
 .recipe__details__main {
   flex-grow: 1;
+}
+
+.recipe__details__ingrediats__title {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.recipe__details__ingrediats__food {
+  font-family: "Playfair Display", serif;
+  margin: 32px 0 31px;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.recipe__details__ingrediats__role {
+  font-size: 16px;
+}
+.recipe__details__ingrediats__role > input {
+  margin-right: 9px;
+}
+.recipe__details__ingrediats__role:not(:last-child) {
+  margin-bottom: 13px;
+}
+
+.recipe__details__ingrediats__role__bold {
+  font-weight: bold;
+}
+
+.recipe__details__ingrediats__suggetions > input {
+  margin-right: 9px;
+}
+
+.recipe__details__ingrediats__suggetions__italic {
+  font-style: italic;
+}
+
+footer {
+  margin-top: 93px;
+  text-align: center;
+  color: #a9a9a9;
+}
+
+.footer-user-name {
+  font-size: inherit;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 767px) {
+  .recipe {
+    padding: 32px 11px 24px;
+  }
+  .recipe__title {
+    font-size: 24px;
+  }
+  .recipe__explanation__icon {
+    margin-top: 8px;
+  }
+  .recipe__details {
+    flex-direction: column;
+    margin-top: 24px;
+  }
+  .recipe__details__times {
+    padding: 0;
+    box-shadow: none;
+    border-radius: 0;
+    margin-right: 80px;
+  }
+  .recipe__details__yields {
+    font-size: 10px;
+    margin-bottom: 20px;
+  }
+  .recipe__details__yields__name {
+    font-size: 8px;
+  }
+  .recipe__details__cook__times {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    margin-bottom: 34px;
+  }
+  .recipe__details__cook__time__name {
+    font-size: 8px;
+  }
+  footer {
+    margin-top: 129px;
+  }
 }
